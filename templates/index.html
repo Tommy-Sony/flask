@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+</head>
+<body>
+    <div>
+        여기는 인덱스페이지입니다.
+        <br>
+        <a href="/about">어바웃 페이지로 이동</a>
+    </div>
+    <div class="daum_content">
+        {% for i in daum %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </div>
+</body>
+</html>
